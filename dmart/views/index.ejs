@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>DMart</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1 class="title">DMart</h1>
+        <p>Welcome to DMart!</p>
+        <div class="container">
+            <div class="box">
+                <h2>Products</h2>
+                <p>ID: <%= product.id %></p>
+                <p>Name: <%= product.name %></p>
+                <p>Cost: ₹<%= product.cost %></p>
+                <p>Quantity: <%= product.qty %></p>
+            </div>
+            <div class="box">
+                <h2>Customer</h2>
+                <p>ID: <%= Customer.id %></p>
+                <p>Name: <%= Customer.name %></p>
+                <p>Address: <%= Customer.adress %></p>
+                <p>Phone: <%= Customer.phone %></p>
+            </div>
+            <div class="box">
+                <h2>Employee</h2>
+                <p>ID: <%= Employee.id %></p>
+                <p>Name: <%= Employee.name %></p>
+                <p>Address: <%= Employee.adress %></p>
+                <p>Phone: <%= Employee.phone %></p>
+            </div>
+        </div>
+
+        <div class="payment-row">
+            <div class="box">
+                <h2>Payment</h2>
+                <p>Bill No: <%= Payment.Billno %></p>
+                <p>Amount: ₹<%= Payment.amount %></p>
+                <p>Date: <%= Payment.date %></p>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>
